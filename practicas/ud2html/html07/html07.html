@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta  name="description" content="practica de formularios">
+	<meta name="author" content="ismael heras">
+	<meta name="keywords" content="practica, ismael" >
+	<meta name="refresh"  content="2" >
+	<meta name="generator" content="notepad++">
+	<meta name="robot" content="index, follow">
+    <link rel="shortcut icon" type="imagen/png"  href ="../../../favicon.ico/favicon.png">
+    
+   
+    <title>plantillas formularios</title>
+	<style>
+	/* *{
+	margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+	} */
+    main{
+        color: deepskyblue;
+        background-color: antiquewhite;
+    }
+    header{
+        background-color: aqua;
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .enviar-abajo{
+        
+        display: inline-block;
+        flex-direction: row;
+        margin-right: 15px;
+
+    }
+    .enviar-contenedor{
+        margin-top: 25px;
+        margin-bottom: 70px;
+    }
+    .imputs{
+        margin-bottom: 15px;    
+    }
+    .footer{
+        text-align: center;
+        font-size: 24px;
+    }
+	
+	</style>
+</head>
+<body>
+<header>
+<h1>trabajando con formularios</h1>
+</header>
+ <main>
+ 
+ <form action="action_page.php" method="get">
+     <fieldset>
+         <legend> DATOS PERSONALES</legend>
+            <div>
+                    nombre:
+                       <input class="imputs" type="text" name="nombre" placeholder="Escribe tu Nombre"><br>
+                    </div>
+                    <div>
+                            apellidos:
+                               <input class="imputs" type="text" name="apellidos" placeholder="Escribe tus Apellidos"><br>
+                            </div>
+                            <div>
+                                    correo:
+                                   <input class="imputs" type="email" name="correo" placeholder="Escribe tu Correo"><br>
+                                </div>
+                                <div>
+                                        Password:
+                                       <input class="imputs" type="password" name="contraseña" placeholder="Escribe tu Contraseña"><br>
+                                    </div>
+                                    <div>
+                                            telefono:
+                                            <input class="imputs" type="tel" name="telefono" placeholder="Introduce tu numero de TLF" >
+                                            </div>
+                                            <div>
+                                                    fecha:
+                                                    <input class="imputs" type="date"  name="fecha"   min="2000-11-8" max="1968-3-14"     >
+                                                    </div>
+                                                    <div>
+                                                            url:
+                                                            <input class="imputs" type="url" name="url" placeholder="Ingrese una URL">
+                                                     </div>
+                                                     <div>
+                                                            fecha y hora:
+                                                            <input class="imputs" type="datetime" name="fechahora" placeholder="Ingrese una fecha">
+                                                            </div>
+                                                            <div>
+                                                                    obsevaciones:<br>
+                                                                    <textarea class="imputs" name="nombre de control"  rows="10" cols="50" >
+                                                                    
+                                                                    </textarea>
+                                                                    </div>
+                                                            
+                                                     
+
+     </fieldset>
+ 
+ <fieldset>
+ <legend>SELECTOR DE ELEMENTOS</legend>
+
+ 
+ 
+ 
+ <div>
+  buscar:
+ <input class="imputs" type=“search” name=“busqueda”>
+ </div>
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div>
+ numero:
+ <input class="imputs" type="number" name="num" min="0" max="5">
+ </div>
+ 
+  <div>
+   Elije tu numero favorito del 1 al 10 <br>
+   <input class="imputs" type="range" name="rango" min="1" max="10" value="5">
+   <input type="submit">
+  </div>
+  
+  <div>
+  color:
+    <input class="imputs" type="color" name="color">
+  </div>
+  
+  
+ <div>
+     <p>Elije tu color favorito</p>
+    <input class="imputs"  type="radio" name="color" value="rojo"
+	checked> rojo<br>
+	<input class="imputs" type="radio" name="color "value="azul">
+	azul<br>
+	<input class="imputs" type="radio" name="color" value="verde">
+	verde<br>
+ </div>
+
+ <div>
+     Elije tu marca de coches favorita <br>
+ <select class="imputs" name="marca" size="3">
+ 
+  <option value="volvo" name="coche">volvo</option>
+ <option value="ferrari" name="coche">ferrari</option>
+ <option value="audi" name="coche">audi</option>
+ <option value="seat" name="coche">seat</option>
+ </select>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ <div>
+ checkbox:
+    <input class="imputs" type="checkbox">
+ </div>
+ 
+ 
+ 
+ <div>
+ buscador de archivos:
+   <input class="imputs" type="file" name="myFile">
+ </div>
+ <div>
+ search:
+   <input class="imputs" type="search" name="googlesearch">
+ </div>
+ 
+ 
+ 
+ 
+ <div>
+     Elije color
+ <input class="imputs" type="color" name="color favorito" value="#ff0000">
+ </div>
+ 
+ </fieldset>
+ <div class="enviar-contenedor">
+        <div class="enviar-abajo">
+                <input  type="image" src="img/login.png" >
+               </div>
+        <div class="enviar-abajo">
+                <input   type="submit"  >
+                </div>
+    <div class="enviar-abajo" >
+        <input type="reset">
+        </div>
+        <div class="enviar-abajo">
+          
+              <input type="button" onclick="alert('hola amor!')" value="Click Me!">
+            </div>
+            
+            
+     
+ </div>
+ 
+ 
+ 
+ 
+
+    
+	
+	<footer class="footer">
+	<p> &copy;  Todos los derechos resevados Ismael Heras</p>
+	</footer>
+	
+	</form>
+ </main>   
+</body>
+</html>

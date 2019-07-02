@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<!-- chanel 2 -->
+<channel>
+<title>ismael heras salvador</title>
+<link> https://elpais.com </link>
+<description>pagina del pais</description>
+<category>noticias internacionales</category>
+<languague>es</languague>
+<pubDate>tue, 15 jan 2019 8:45:00 +0100</pubDate>
+<item>
+<title>muere alcalde polaco</title>
+<link>https://elpais.com/internacional/2019/01/14/actualidad/1547457479_273168.html</link>
+<description>apuñalan a un alcalde en polonia</description>
+<author>ismael heras salvador</author>
+<pubDate>tue, 15 jan 2019 9:00:00 +0100</pubDate>
+<guid>http://192.168.2.104</guid>
+</item>
+<item>
+<title>turmp amenaza a turquia</title>
+<link>https://elpais.com/internacional/2019/01/14/estados_unidos/1547487202_269771.html</link>
+<description>donald trump amezana con destruir
+turquia si ataca a los kurdos</description>
+<author>ismael heras salvador</author>
+<pubDate>tue, 15 jan 2019 8:45:00 +0100</pubDate>
+<guid>http://192.168.2.104</guid>
+</item>
+<item>
+<title>el chapo guzman</title>
+<link>https://elpais.com/internacional/2019/01/14/actualidad/1547489381_785381.html</link>
+<description>las rutinas del chapo guzman</description>
+<author>ismael heras salvador</author>
+<pubDate>tue, 15 jan 2019 8:45:00 +0100</pubDate>
+<guid>http://192.168.2.104</guid>
+</item>
+</channel>
+
+</rss>

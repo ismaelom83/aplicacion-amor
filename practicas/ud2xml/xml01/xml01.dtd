@@ -1,0 +1,6 @@
+<!ELEMENT mundo (pais*)>
+<!ELEMENT pais (nombre, capital,continente)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT capital (#PCDATA)>
+<!ELEMENT continente (#PCDATA)>
+ 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE horario [
+<!ELEMENT horario (modulos,dia+)>
+<!ELEMENT modulos (modulo*)>
+<!ELEMENT modulo (sigla, nombre, profesor) >
+<!ELEMENT dia (dia_sem+)>
+<!ELEMENT dia_sem (#PCDATA)>
+<!ELEMENT sigla (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT profesor (#PCDATA)>
+<!ATTLIST profesor codigo (ARG|MTRG|ARN|ACF|HRO|MDB) #REQUIRED>
+<!ATTLIST dia hora CDATA #REQUIRED>
+<!ATTLIST dia_sem dia (lunes|martes|miercoles|jueves|viernes|sabado) #IMPLIED>
+<!ATTLIST dia_sem num CDATA '1' >
+]>
+<horario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "xml04b.xsd">
+	<modulos>
+		<modulo>
+			<sigla>EDD</sigla>
+			<nombre>Entornos de desarrollo</nombre>
+			<profesor codigo="ARG">ANTONIO</profesor>
+		</modulo>
+		<modulo>
+			<sigla>FOL</sigla>
+			<nombre>Formacion y orientacion laboral</nombre>
+			<profesor codigo="MTRG">MARIA TERESA</profesor>
+		</modulo>	
+		<modulo>
+			<sigla>BBDD</sigla>
+			<nombre>BASES DE DATOS</nombre>
+			<profesor codigo="MTRG">HERMELEINDA</profesor>
+		</modulo>
+		<modulo>
+			<sigla>PROG</sigla>
+			<nombre>PROGRAMACION</nombre>
+			<profesor codigo="MTRG">AMBROSIO</profesor>
+		</modulo>
+		<modulo>
+			<sigla>SINF</sigla>
+			<nombre>SISTEMAS INFORMATICOS</nombre>
+			<profesor codigo="MTRG">MANUEL</profesor>
+		</modulo>
+		<modulo>
+			<sigla>LMGSI</sigla>
+			<nombre>LENGUAJE DE MARCAS</nombre>
+			<profesor codigo="MTRG">AMOR</profesor>
+		</modulo>
+	</modulos>
+	<dia hora="8:30 a 9:20">
+		<dia_sem dia="lunes">EDD</dia_sem>
+		<dia_sem dia="martes" num="2">LMGSI</dia_sem>
+		<dia_sem dia="miercoles" num="2">PROG</dia_sem>
+		<dia_sem dia="jueves" num="2">BBDD</dia_sem>
+		<dia_sem dia="viernes">FOL</dia_sem>
+	</dia>
+	<dia hora="9:20 a 10:10">
+		<dia_sem dia="lunes">FOL</dia_sem>
+		<dia_sem dia="viernes" num="2">LMGSI</dia_sem>
+	</dia>
+	<dia hora="10:10 a 11:00">
+		<dia_sem dia="lunes" num="2">BBDD</dia_sem>
+		<dia_sem dia="martes" num="2">PROG</dia_sem>
+		<dia_sem dia="miercoles">PROG</dia_sem>
+		<dia_sem dia="jueves" num="2">SINF</dia_sem>
+	</dia>
+	<dia hora="11:20 a 12:15">
+		<dia_sem dia="miercoles">FOL</dia_sem>	
+		<dia_sem dia="viernes" num="2">PROG</dia_sem>
+	</dia>
+	<dia hora="12:15 a 13:05">
+		<dia_sem dia="lunes" num="2">SINF</dia_sem>
+		<dia_sem dia="martes" num="2">BBDD</dia_sem>
+		<dia_sem dia="miercoles" num="2">SINF</dia_sem>
+		<dia_sem dia="jueves" num="2">PROG</dia_sem>
+	</dia>
+	<dia hora="13:05 a 13:55">
+		<dia_sem dia="viernes">EDD</dia_sem>
+	</dia>
+</horario>

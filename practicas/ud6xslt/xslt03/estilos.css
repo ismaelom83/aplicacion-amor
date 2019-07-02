@@ -1,0 +1,53 @@
+
+
+
+h1{
+	font-size: 60px;
+	color: red;
+}
+
+
+
+.EDD{
+	background-color:  #4285F4;
+}
+
+.LMSGI{
+	background-color: #DB4437;
+}
+
+.PROG{
+	background-color: #F4B400;
+}
+
+.BBDD{
+	background-color: #0F9D58;
+}
+
+.FOL{
+	background-color: brown;
+}
+
+.SINF{
+	background-color: grey;
+}
+
+table tr td{
+	width:200px;
+	height:50px;	
+}
+
+.cabecera{
+	background-color: yellowgreen;
+}
+
+.cabeceradias{
+	background-color: aqua;
+}
+
+.hora{
+	background-color: grey;
+}
+
+
+

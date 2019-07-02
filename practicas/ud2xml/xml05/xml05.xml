@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE company [ 
+<!ELEMENT company (empleado+)>
+<!ELEMENT empleado (nombre, apellido, contacto, email, direccion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT contacto (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT direccion (ciudad, estado, zip)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+ ]>
+<company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "xml05.xsd">
+    <empleado>
+        <nombre>Juan</nombre>
+        <apellido>Snchez</apellido>
+        <contacto>123456789</contacto>
+        <email>Juansanchez@comoany.com</email>
+        <direccion>
+            <ciudad>Bangalore</ciudad>
+            <estado>Kamataka</estado>
+            <zip>560212</zip>
+        </direccion>
+    </empleado>
+</company>

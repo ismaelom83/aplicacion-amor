@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hechosHistoricos [ 
+<!ELEMENT hechosHistoricos (acontecimientos*)>
+<!ELEMENT acontecimientos (descripcion, fecha)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT fecha (dia, mes, anyo)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anyo (#PCDATA)>
+ ]>
+<hechosHistoricos>
+	<acontecimientos>
+		<descripcion>Se funda YouTube</descripcion>
+		<fecha>
+			<dia>15</dia>
+			<mes>2</mes>
+			<anyo>2005</anyo>
+		</fecha>
+	</acontecimientos>
+
+	<acontecimientos>
+		<descripcion>Se funda Google</descripcion>
+		<fecha>
+			<dia>4</dia>
+			<mes>9</mes>
+			<anyo>1999</anyo>
+		</fecha>
+	</acontecimientos>
+
+	<acontecimientos>
+		<descripcion>Se funda Facebook</descripcion>
+		<fecha>
+			<dia>4</dia>
+			<mes>2</mes>
+			<anyo>2004</anyo>
+		</fecha>
+	</acontecimientos>
+</hechosHistoricos>

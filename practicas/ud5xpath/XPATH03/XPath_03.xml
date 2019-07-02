@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE peliculas [
+<!ELEMENT peliculas (pelicula+)>
+<!ELEMENT pelicula (nombre, valoracion, publico)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT valoracion (#PCDATA)>
+<!ELEMENT publico (#PCDATA)>
+<!ATTLIST valoracion  puntos CDATA #REQUIRED>
+]>
+<peliculas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "xpath_03.xsd">
+	<pelicula>
+		<nombre>La invenci&#243;n de Hugo</nombre>
+		<valoracion puntos="7"/>
+		<publico>Todos los p&#250;blicos</publico>
+	</pelicula>
+	<pelicula>
+		<nombre>La piel que habito</nombre>
+		<valoracion puntos="4"/>
+		<publico>Adultos</publico>
+	</pelicula>
+	<pelicula>
+		<nombre>Los descencientes</nombre>
+		<valoracion puntos="6"/>
+		<publico>Mayores de 12</publico>
+	</pelicula>
+</peliculas>

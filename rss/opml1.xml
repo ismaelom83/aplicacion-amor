@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><opml version="2.0">
+<head><title>Slick RSS OPML Export</title></head>
+<body><outline type="rss" text="atom1" xmlUrl="http://192.168.2.104/rss/atom1.xml"/>
+<outline type="rss" text="jjhbjhb" xmlUrl="http://192.168.2.103/rss/atom01.xml"/>
+<outline type="rss" text="ismael" xmlUrl="http://192.168.2.104/rss/rss11.xml"/>
+<outline type="rss" text="ismael" xmlUrl="http://192.168.2.104/rss/rss12.xml"/>
+<outline type="rss" text="ismael" xmlUrl="http://192.168.2.104/rss/rss13.xml"/>
+</body>
+</opml>

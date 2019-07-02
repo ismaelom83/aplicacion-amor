@@ -1,0 +1,157 @@
+
+
+
+
+/* *{ */
+	/* margin:auto; */
+	/* box-sizing:border-box; */
+/* } */
+
+h1{
+	text-align:center;
+	color:orange;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+
+
+ li {
+	
+	display:inline-block;
+	padding-left:35px;
+	
+	
+}
+a{
+	color:brown;
+}
+
+ul{
+	text-align:center;
+	background-color:orange;
+	padding-bottom:15PX;
+	padding-top:15px;
+	width:50%;
+	margin-bottom:35px;
+}
+a:link{
+	text-decoration:none;
+}
+nav a:hover{
+	color:white;
+}
+section{
+	width:50%;
+}
+h2{
+	font-size:36px;
+	/* margin-bottom:25px; */
+	border-bottom:soloid 5px orange;
+	color:brown;
+}
+hr{
+	height:2px;
+	background-color: brown;
+	margin-bottom:20px;
+}
+/* figure{ */
+	/* float:left; */
+	  /* width:15%;   */
+/* } */
+
+ h3, h4, p{ 
+	 float:right; 
+	  width:70%;  
+ } 
+
+article{
+	margin-bottom:45px;
+	margin-top:45px;
+}
+
+h3{
+	font-size:30px;
+	margin-bottom:15px;
+	 color:brown; 
+}
+h4{
+	font-size:22px;
+	margin-bottom:10px;
+	color:black;
+	
+}
+h4 a{
+	text-decoration:none;
+	color:black;
+}
+h4 a:hover{
+	color: cyan;
+}
+
+  address {
+	margin-right:10px;
+}
+
+#pie-pagina{
+	/* margin-left:50px; */
+	margin-bottom:5px;
+	margin-top:50px;
+	color:white;
+	background-color: #a05000;
+	padding-bottom: 13px;
+	padding-left:10px;
+}
+footer address{
+	/* background-color: grey; */
+	text-align:right;
+	color: white;
+	
+}
+address{
+	background-color:grey;
+	margin-left:800px;
+	padding-right:10px;
+}
+
+figure {
+	border:solid 1px orange;
+	display:inline-block;
+	text-align:center;
+	padding:10px  10px 10px 10px;
+}
+ figure figcaption{
+	
+	color:orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

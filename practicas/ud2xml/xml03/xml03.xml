@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE libro [ 
+<!ELEMENT libro (capitulo+)>
+<!ELEMENT capitulo (titulo, subcapitulo*)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT subcapitulo (titulo)>
+<!ATTLIST libro xmls:xsi CDATA #IMPLIED>
+<!ATTLIST  libro xsi:noNamespaceSchemaLocation CDATA  #IMPLIED >
+ ]>
+<libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "xml03.xsd">
+    <capitulo>
+        <titulo>Capitulo1</titulo>
+    </capitulo>
+    <capitulo>
+        <titulo>Capitulo2</titulo>
+        <subcapitulo>
+            <titulo>Subcapitulo1</titulo>
+        </subcapitulo>
+        <subcapitulo>
+            <titulo>Subcapitulo2</titulo>
+        </subcapitulo>
+    </capitulo>
+    <capitulo>
+        <titulo>Capitulo3</titulo>
+    </capitulo>
+</libro>

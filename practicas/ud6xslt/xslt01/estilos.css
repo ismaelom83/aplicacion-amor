@@ -1,0 +1,22 @@
+
+body{
+	background-color:aquamarine;
+	margin:auto;
+	width: 50%;
+	font-family: 'Permanent Marker', cursive;
+	font-size:24px;
+}
+
+h1{
+	width:50%;
+	background-color:green;
+	margin-top:200px;
+}
+
+table{
+	background-color:orange;
+	text-align:center;
+	width: 400px;
+	height: 190px;
+	
+}

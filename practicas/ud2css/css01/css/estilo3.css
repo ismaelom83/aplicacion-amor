@@ -1,0 +1,19 @@
+/* 
+    Created on : 16-nov-2018
+    Author     : 
+    File        : estilo1.css
+    Description : Trabajando con selectores
+*/
+
+.padre{
+    background-color: blue;
+    
+}
+.padre .hijo{
+    border: solid 1px red;
+}
+   
+   
+
+
+

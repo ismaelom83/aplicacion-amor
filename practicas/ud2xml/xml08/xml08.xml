@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"	
+         xmlns="http://www.prueba.es/persona"
+         xmlns:doc="http://www.prueba.es/docencia"
+         xs:schemaLocation="http://www.prueba.es/persona xml08-personas.xsd
+                            http://www.prueba.es/docencia xml08-docencia.xsd">
+	<datos>
+		<nombre>Rosa</nombre>
+		<apellidos>Alvarez Santos</apellidos>
+		<DNI>25390952X</DNI>
+	</datos>
+	<comentario>repetidor</comentario>
+	<doc:docencia>
+		<doc:grupo>DAW1</doc:grupo>
+		<doc:asignatura>
+			<doc:nombre>LM</doc:nombre>
+			<doc:horas>4</doc:horas>
+			<doc:profesor>Amor Rodriguez</doc:profesor>
+		</doc:asignatura>
+		<doc:asignatura>
+			<doc:nombre>Programacion</doc:nombre>
+			<doc:horas>8</doc:horas>
+			<doc:profesor>Ambrosio Casado</doc:profesor>
+		</doc:asignatura>
+	</doc:docencia>
+</alumno>
+
+
+
+
+

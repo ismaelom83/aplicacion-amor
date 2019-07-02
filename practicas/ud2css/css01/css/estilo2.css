@@ -1,0 +1,24 @@
+/* 
+    Created on : 16-nov-2018
+    Author     : 
+    File        : estilo1.css
+    Description : Trabajando con selectores
+*/
+
+div a {
+    background-color:#009cde; /* color azul*/
+    color:#ffffff; /*Color blanco */
+    text-decoration:none;
+   }
+   div div div a{
+    background-color:#ff0000; /*color rojo*/
+    color:yellow; /*color amarillo*/
+    text-decoration:none;
+   }
+
+   /* fondo rojo y color de letra amarillo por que la
+    selcccion div div div tiene preferencia a div a  */
+
+
+
+

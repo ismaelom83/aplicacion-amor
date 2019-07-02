@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE  edificio[
+<!ELEMENT  edificio (vivienda+)>
+<!ELEMENT  vivienda (piso, puerta, vecinos)>
+<!ELEMENT  piso (#PCDATA)>
+<!ELEMENT  puerta (#PCDATA)>
+<!ELEMENT  vecinos (nombre+)>
+<!ELEMENT   nombre (#PCDATA)>
+]>
+<edificio  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "xpath_01.xsd">
+	<vivienda>
+		<piso>1</piso>
+		<puerta>A</puerta>
+		<vecinos>
+			<nombre>David</nombre>
+			<nombre>Sara</nombre>
+		</vecinos>
+	</vivienda>
+	<vivienda>
+		<piso>1</piso>
+		<puerta>B</puerta>
+		<vecinos>
+			<nombre>Jaime</nombre>
+			<nombre>Luis</nombre>
+		</vecinos>
+	</vivienda>
+</edificio>

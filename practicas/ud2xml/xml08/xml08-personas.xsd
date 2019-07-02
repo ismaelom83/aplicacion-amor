@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+
+
+<xs:schema  version="1.0" 
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://www.prueba.es/persona"
+            targetNamespace="http://www.prueba.es/persona"
+            elementFormDefault="qualified"
+            attributeFormDefault="qualified">
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="apellidos" type="xs:string"/>
+                            <xs:element name="DNI" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="comentario" type="xs:string"/>
+                <xs:any minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns="http://www.miempresa.com/pedido"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.miempresa.com/pedido"
+           elementFormDefault="qualified">
+   
+</xs:schema>

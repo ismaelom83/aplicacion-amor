@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="universidad">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nombre">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attribute type="xs:short" name="year"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="fechaconstruccion" type="xs:string"/>						
+				<xs:element name="pais" type="xs:string"/>
+				<xs:element name="carreras">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="carrera" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="nombre" type="xs:string"/>
+										<xs:element name="plan" type="xs:int"/>
+										<xs:element name="creditos" type="xs:int"/>
+										<xs:element name="centro" type="xs:string"/>
+										<xs:element name="subdirector" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+									<xs:attribute name="id" type="xs:string" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="asignaturas">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="asignatura" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="nombre" type="xs:string"/>
+										<xs:element name="creditos_teoricos" type="xs:float"/>
+										<xs:element name="creditos_practicos" type="xs:float"/>
+										<xs:element name="trimestre" type="xs:int"/>
+									</xs:sequence>
+									<xs:attribute name="id" type="xs:string" use="optional"/>
+									<xs:attribute name="titulacion" type="xs:string" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="alumnos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="alumno" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="apellido1" type="xs:string"/>
+										<xs:element name="apellido2" type="xs:string"/>
+										<xs:element name="nombre" type="xs:string"/>
+										<xs:element name="sexo" type="xs:string"/>
+										<xs:element name="estudios">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="carrera">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute name="codigo" type="xs:string" use="optional"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="asignaturas">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="asignatura" maxOccurs="unbounded" minOccurs="0">
+																	<xs:complexType>
+																		<xs:simpleContent>
+																			<xs:extension base="xs:string">
+																				<xs:attribute name="codigo" type="xs:string" use="optional"/>
+																			</xs:extension>
+																		</xs:simpleContent>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="proyecto" type="xs:string" minOccurs="0"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="id" type="xs:string"/>
+									<xs:attribute type="xs:string" name="beca" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,65 @@
+/* 
+    Created on : 27/11/2018
+    File        : css/estilo.css
+    Description : css4 
+*/
+
+body{
+	min-width:250px;
+	font-size: 30px;
+	max-width: 50%;
+	margin-left:25%;
+	
+}
+
+article  h2{
+font-size: 1.2em;
+/* background-color: darkslategrey;	 */
+color: darkkhaki;
+}
+ol{
+	background-color: darkkhaki;
+	/* margin-bottom: 40px; */
+}
+article{
+	background-color:darkslategrey;
+	padding-bottom:10px;
+	margin-bottom:25px;
+}
+	
+#uno{
+	border: solid #A64B00 1px;
+	text-align: center;
+	list-style-type:none;
+}
+#uno li{
+	display: inline-block;
+	 color: white;
+	 background-color:#A64B00;
+	 text-transform: uppercase;
+}
+#uno li:nth-child(2n+1){
+	border: dotted #A64B00;
+	 
+	background-color: darkorange;
+}
+
+
+#dos{
+	border: solid #A64B00 1px;
+	text-align: center;
+	list-style-type:none;
+}
+	
+#dos li{
+	border: dotted #A64B00 1px;
+	 color: white;
+	 background-color: #A64B00;
+}
+#dos li:nth-child(2n+2){
+	background-color: darkorange;
+}	
+.material-icons{
+	font-size: 48px;
+}
+	

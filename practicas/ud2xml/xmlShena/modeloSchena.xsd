@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!-- tipos simples-->
+	
+	<!-- opcional posibles valores entyre 1 y 100-->
+
+	<xs:simpleType name="tipoPrecio">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- opcional posibles valores JAVA PHP ASP C C++-->
+
+	<xs:simpleType name="tipoSiglas">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="JAVA"/>
+			<xs:enumeration value="PHP"/>
+			<xs:enumeration value="ASP"/>
+			<xs:enumeration value="C"/>
+			<xs:enumeration value="C++"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- opcional LONGITUD MINIMA ENTRE  5 Y 100 -->
+
+	<xs:simpleType name="tipoDescripcion">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="5"/>
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- validar codigo 5 digitos-->
+
+	<xs:simpleType name="tipoCodigo">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9][0-9][0-9][0-9][0-9]"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- validar cadena de tres caracteres con mayusculas-->
+
+	<xs:simpleType name="tipoIniciales">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z]{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- validar nota 0 y 10 -->
+
+	<xs:simpleType name="tipoNota">
+		<xs:restriction base="xs:byte">
+			<xs:maxInclusive value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- tipos complejos-->
+
+	<xs:complexType name="tipoNotas">
+		<xs:sequence>
+			<xs:element name="asignatura" type="tipoAsignatura" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="tipoAsignatura">
+		<xs:simpleContent>
+			<xs:extension base="tipoNota">
+				<xs:attribute name="nombre" type="xs:string" use="optional" default="***"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:complexType name="tipoFormadepago">
+		<xs:choice>
+			<xs:element name="contado" type="xs:decimal"/>
+			<xs:element name="contrarenbolso" type="xs:decimal"/>
+			<xs:element name="visa" type="xs:decimal"/>
+			<xs:element name="paypal" type="xs:decimal"/>
+			<xs:element name="master" type="xs:decimal"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="tipoLista">
+		<xs:sequence>
+			<xs:element name="cancion1" type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="cancion2" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="cancion3" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="cancion4" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="cancion5" type="xs:string" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute type="xs:date" name="fecha"/>
+	</xs:complexType>
+
+
+	<!-- declaracion de elementos -->
+
+	<xs:element name="datos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="precio" type="tipoPrecio" minOccurs="0"/>
+				<xs:element name="siglas" type="tipoSiglas" minOccurs="0"/>
+				<xs:element name="descripcion" type="tipoDescripcion" minOccurs="0"/>
+				<xs:element name="codigo" type="tipoCodigo"/>
+				<xs:element name="iniciales" type="tipoIniciales"/>
+				<xs:element name="nombre" type="xs:string"/>
+				<xs:element name="notas" type="tipoNotas"/>  				 
+				<xs:element name="formadepago" type="tipoFormadepago"/>
+				<xs:element name="lista" type="tipoLista"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

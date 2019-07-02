@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE listatickets [
+<!ELEMENT listatickets (ticket+)>
+<!ELEMENT ticket (numero, fecha, hora, producto+,total)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT producto (nombre, precio)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+]>
+<listatickets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "xpath_02.xsd">
+	<ticket >
+		<numero>7483</numero>
+		<fecha>2012-01-20</fecha>
+		<hora>22:00:00</hora>
+		<producto>
+			<nombre>Agua</nombre>
+			<precio>0.60</precio>
+		</producto>
+		<producto>
+			<nombre>Refresco</nombre>
+			<precio>1.00</precio>
+		</producto>	
+		<total>1.60</total>
+	</ticket>
+	<ticket>
+		<numero>7484</numero>
+		<fecha>2012-01-21</fecha>
+		<hora>22:05:00</hora>
+		<producto>
+			<nombre>Refresco</nombre>
+			<precio>1.00</precio>
+		</producto>
+		<producto>
+			<nombre>Refresco</nombre>
+			<precio>1.00</precio>
+		</producto>	
+		<total>2.00</total>
+	</ticket>
+</listatickets>	

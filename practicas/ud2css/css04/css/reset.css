@@ -1,0 +1,13 @@
+﻿/* 
+    Created on  : 27-nov-2018
+    Author      : 
+    File        : reset.css
+    Description : Resetear los estilos
+*/
+
+
+* {
+  
+    margin:0px;
+    padding:0px;
+}

@@ -1,0 +1,964 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<edificio>
+	<vivienda>
+		<piso>1</piso>
+		<puerta>A</puerta>
+		<vecinos>
+			<nombre>David</nombre>
+			<nombre>Sara</nombre>
+		</vecinos>
+	</vivienda>
+	<vivienda>
+		<piso>1</piso>
+		<puerta>B</puerta>
+		<vecinos>
+			<nombre>Jaime</nombre>
+			<nombre>Luis</nombre>
+		</vecinos>
+	</vivienda>
+</edificio>
+
+
+
+
+
+
+eleijes la primera vivienda el primer nombre:
+/vivienda[1]/vecinos/nombre[1]/text()
+
+
+nombres de los vecinos que empiezan por j.
+
+//vivienda/vecinos/nombre[starts-with(.,"J")]/text()
+
+nombres con mas de 5 o 5 letras 
+
+//vivienda/vecinos/nombre[string-length(.)>=5]/text()
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<listatickets>
+	<ticket>
+		<numero>7483</numero>
+		<fecha>2012-01-20</fecha>
+		<hora>22:00:00</hora>
+		<producto>
+			<nombre>Agua</nombre>
+			<precio>0.60</precio>
+		</producto>
+		<producto>
+			<nombre>Refresco</nombre>
+			<precio>1.00</precio>
+		</producto>	
+		<total>1.60</total>
+	</ticket>
+	<ticket>
+		<numero>7484</numero>
+		<fecha>2012-01-21</fecha>
+		<hora>22:05:00</hora>
+		<producto>
+			<nombre>Refresco</nombre>
+			<precio>1.00</precio>
+		</producto>
+		<producto>
+			<nombre>Refresco</nombre>
+			<precio>1.00</precio>
+		</producto>	
+		<total>2.00</total>
+	</ticket>
+</listatickets>	
+
+
+escribe la ruta para llegar al elemento total.
+
+
+
+
+para sacar 2 tickets de forma diferente
+
+
+/listatickets/ticket/numero/text() | /listatickets/ticket/total/text()
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<peliculas>
+	<pelicula>
+		<nombre>La invencion de Hugo</nombre>
+		<valoracion puntos="7"/>
+		<publico>Todos los publicos</publico>
+	</pelicula>
+	<pelicula>
+		<nombre>La piel que habito</nombre>
+		<valoracion puntos="4"/>
+		<publico>Adultos</publico>
+	</pelicula>
+	<pelicula>
+		<nombre>Los descencientes</nombre>
+		<valoracion puntos="6"/>
+		<publico>Mayores de 12</publico>
+	</pelicula>
+</peliculas>
+
+
+ejercio A.
+ Escribe la ruta XPath que seleccione las películas (nombre de la pelicula) cuya
+valoración sea de 4 o más puntos
+
+/peliculas/pelicula/nombre[../valoracion/@puntos>=4]/text()
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<actividades>
+
+
+-<actividad nivel="infantil">
+
+<codigo>A01</codigo>
+
+<titulo>Al agua patos</titulo>
+
+<fecha_inicio>2017-01-15</fecha_inicio>
+
+
+-<sesiones intensidad="suave">
+
+<minutos_sesion>45</minutos_sesion>
+
+<sesiones_semana>3</sesiones_semana>
+
+</sesiones>
+
+</actividad>
+
+
+-<actividad nivel="adultos">
+
+<codigo>A02</codigo>
+
+<titulo>Spinning y agua</titulo>
+
+<fecha_inicio>2017-01-08</fecha_inicio>
+
+
+-<sesiones intensidad="fuerte">
+
+<minutos_sesion>45</minutos_sesion>
+
+<sesiones_semana>3</sesiones_semana>
+
+</sesiones>
+
+</actividad>
+
+
+-<actividad nivel="adultos">
+
+<codigo>A03</codigo>
+
+<titulo>Spinning en el agua</titulo>
+
+<fecha_inicio>2017-01-15</fecha_inicio>
+
+
+-<sesiones intensidad="moderada">
+
+<minutos_sesion>60</minutos_sesion>
+
+<sesiones_semana>2</sesiones_semana>
+
+</sesiones>
+
+</actividad>
+
+
+-<actividad nivel="infantil">
+
+<codigo>A04</codigo>
+
+<titulo>Socorrismo</titulo>
+
+<fecha_inicio>2017-01-15</fecha_inicio>
+
+
+-<sesiones intensidad="moderada">
+
+<minutos_sesion>45</minutos_sesion>
+
+<sesiones_semana>2</sesiones_semana>
+
+</sesiones>
+
+</actividad>
+
+
+-<actividad nivel="infantil">
+
+<codigo>A05</codigo>
+
+<titulo>Perfeccionamiento en el agua</titulo>
+
+<fecha_inicio>2017-01-15</fecha_inicio>
+
+
+-<sesiones intensidad="moderada">
+
+<minutos_sesion>45</minutos_sesion>
+
+<sesiones_semana>2</sesiones_semana>
+
+</sesiones>
+
+</actividad>
+
+
+-<actividad nivel="adultos">
+
+<codigo>A06</codigo>
+
+<titulo>Aprender a nadar</titulo>
+
+<fecha_inicio>2017-02-15</fecha_inicio>
+
+
+-<sesiones intensidad="suave">
+
+<minutos_sesion>30</minutos_sesion>
+
+<sesiones_semana>2</sesiones_semana>
+
+</sesiones>
+
+</actividad>
+
+</actividades>
+
+
+
+ejercicioo A.
+
+Todos los elementos de las actividades infantiles.
+
+/actividades/actividad[@nivel='infantil']
+
+
+
+3. El nombre de las actividades con dos sesiones semanales.
+
+/actividades/actividad[sesiones/sesiones_semana=2]/titulo/text()
+
+
+4. Cuenta del número de actividades.
+
+count(//actividad)  en el net beans no funciona
+
+
+5. Si queremos convertir el resultado a cadena de caracteres, podemos usar la
+función string().
+
+string(count(//actividad)) en el net beans no funciona
+
+6. Cuenta del número de actividades infantiles.
+count(//actividad[@nivel="infantil"])
+
+
+8. Nodos de la actividad de código A06.
+
+//actividad[codigo='A06']/node()
+
+
+-----------------------------------------------------------------
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<garaje>
+  <coches>
+    <coche>
+      <matricula>1234A</matricula>
+      <propietario>P01</propietario>
+      <marca>Seat</marca>
+      <modelo>Leon 1.6 TDI</modelo>
+      <color>Gris</color>
+      <km>125000</km>
+    </coche>
+    <coche>
+      <matricula>4444B</matricula>
+      <propietario>P02</propietario>
+      <marca>Seat</marca>
+      <modelo>Altea XL</modelo>
+      <color>Oro</color>
+      <km>90000</km>
+    </coche>
+    <coche>
+      <matricula>1233A</matricula>
+      <propietario>P03</propietario>
+      <marca>Seat</marca>
+      <modelo>Ibiza 1.4 TDI</modelo>
+      <color>Rojo</color>
+      <km>145000</km>
+    </coche>
+    <coche>
+      <matricula>0011A</matricula>
+      <propietario>P04</propietario>
+      <marca>Volkswagen</marca>
+      <modelo>Golf 1.6 TDI</modelo>
+      <color>Negro</color>
+      <km>220000</km>
+    </coche>
+    <coche>
+      <matricula>1100B</matricula>
+      <propietario>P05</propietario>
+      <marca>Volkswagen</marca>
+      <modelo>Polo 1.2 Advance</modelo>
+      <color>Rojo</color>
+      <km>300000</km>
+    </coche>
+    <coche>
+      <matricula>1001A</matricula>
+      <propietario>P05</propietario>
+      <marca>Renault</marca>
+      <modelo>Clio Authentique 1.3</modelo>
+      <color>Rojo</color>
+      <km>10000</km>
+    </coche>
+    <coche>
+      <matricula>1222C</matricula>
+      <propietario>P06</propietario>
+      <marca>Renault</marca>
+      <modelo>Megane Berlina GT</modelo>
+      <color>Acero</color>
+      <km>240000</km>
+    </coche>
+    <coche>
+      <matricula>2211C</matricula>
+      <propietario>P07</propietario>
+      <marca>Ford</marca>
+      <modelo>Konnect Combi</modelo>
+      <color>Marino</color>
+      <km>312000</km>
+    </coche>
+    <coche>
+      <matricula>1234C</matricula>
+      <propietario>P08</propietario>
+      <marca>Ford</marca>
+      <modelo>Ranger</modelo>
+      <color>Verde</color>
+      <km>125600</km>
+    </coche>
+  </coches>
+  <reparaciones>
+    <reparacion codigo="J0001">
+      <matricula>1234A</matricula>
+      <descripcion>Fallo elevalunas</descripcion>
+      <fecha_entrada>2013/06/03</fecha_entrada>
+      <fecha_salida>2013/06/03</fecha_salida>
+      <horas>2</horas>
+    </reparacion>
+    <reparacion codigo="J0002">
+      <matricula>4444B</matricula>
+      <descripcion>Cambio aceite</descripcion>
+      <fecha_entrada>2013/06/03</fecha_entrada>
+      <fecha_salida>2013/06/04</fecha_salida>
+      <horas>1</horas>
+    </reparacion>
+    <reparacion codigo="J0003">
+      <matricula>4444B</matricula>
+      <descripcion>Cambio neumaticos</descripcion>
+      <fecha_entrada>2013/06/03</fecha_entrada>
+      <fecha_salida>2013/06/04</fecha_salida>
+      <horas>2</horas>
+    </reparacion>
+    <reparacion codigo="J0004">
+      <matricula>0011A</matricula>
+      <descripcion>Cambio rueda</descripcion>
+      <fecha_entrada>2013/06/04</fecha_entrada>
+      <fecha_salida>2013/06/04</fecha_salida>
+      <horas>1</horas>
+    </reparacion>
+    <reparacion codigo="J0005">
+      <matricula>1100B</matricula>
+      <descripcion>Fallo encendido</descripcion>
+      <fecha_entrada>2013/06/04</fecha_entrada>
+      <fecha_salida>2013/06/06</fecha_salida>
+      <horas>20</horas>
+    </reparacion>
+    <reparacion codigo="J0006">
+      <matricula>1001A</matricula>
+      <descripcion>Cambio aceite</descripcion>
+      <fecha_entrada>2013/06/05</fecha_entrada>
+      <fecha_salida>2013/06/05</fecha_salida>
+      <horas>1</horas>
+    </reparacion>
+    <reparacion codigo="J0007">
+      <matricula>1222C</matricula>
+      <descripcion>Fallo electrico</descripcion>
+      <fecha_entrada>2013/06/06</fecha_entrada>
+      <fecha_salida>2013/06/08</fecha_salida>
+      <horas>10</horas>
+    </reparacion>
+    <reparacion codigo="J0008">
+      <matricula>2211C</matricula>
+      <descripcion>Cambio rueda</descripcion>
+      <fecha_entrada>2013/06/06</fecha_entrada>
+      <fecha_salida>2013/06/06</fecha_salida>
+      <horas>2</horas>
+    </reparacion>
+    <reparacion codigo="J0009">
+      <matricula>1234C</matricula>
+      <descripcion>Cambio aceite</descripcion>
+      <fecha_entrada>2013/06/07</fecha_entrada>
+      <fecha_salida>2013/06/07</fecha_salida>
+      <horas>1</horas>
+    </reparacion>
+  </reparaciones>
+</garaje>
+
+
+
+
+
+EJERCICIO 5
+
+
+1) Los elementos de cada coche
+
+//coche/node()
+
+
+
+2) Los elementos de cada reparación.
+
+//reparacion/node()
+
+
+3) El contenido de La matrícula de los coches
+
+//matricula/text()
+
+
+4) Todos los nodos (elementos y contenido) de los coches de la marca Renault.
+
+/garaje/coches/coche[marca="Renault"]/node()
+
+
+5) Todos los nodos de los coches de más de 200000 km.
+
+/garaje/coches/coche[km>200000]/node()
+
+
+6) El contenido del color del coche de matrícula 1234C.
+
+/garaje/coches/coche[matricula="1234C"]/color/text()
+
+
+7) El contenido de la descripción de las reparaciones realizadas al coche de matrícula: 4444B.
+
+/garaje/reparaciones/reparacion[matricula="4444B"]/descripcion/text()
+
+
+8) El contenido de la descripción de la reparación de código J0005.
+
+/garaje/reparaciones/reparacion[@codigo="J0005"]/descripcion/text()
+
+
+
+9) Suma de las horas invertidas reparando coches.
+
+sum(//horas)
+
+
+10) Número de coches en el documento.
+
+count(//coche)
+
+11) Selecciona todos los elementos del primer coche.
+
+/garaje/coches/coche[1]/node()
+
+
+12) Selecciona todos los elementos de la última reparación.
+
+//reparacion[last()]/node()
+
+
+13) Selecciona todos los elementos del coche de la marca Seat con color Rojo.
+
+//coche[marca="Seat" and color="Rojo"]/node()
+
+
+14) Propietario del coche modelo Polo 1.2 Advance
+
+//coche[modelo="Polo 1.2 Advance"]/propietario/text()
+
+
+15) Contenido de la descripción de las reparaciones realizadas con fecha de entrada 2013/06/06.
+
+//reparacion[fecha_entrada="2013/06/06"]/descripcion/text()
+
+
+16) Seleccionar los coches rojos y grises.
+
+//coche[color="Rojo"  or  color="Gris"]/node()
+
+
+17) Número de coches que entraron a reparar el 2013/06/03.
+
+count(//reparacion[fecha_entrada="2013/06/03"]/matricula)
+
+
+18) Contenido del modelo del propietario P01.
+
+
+//coche[propietario="P01"]/modelo/text()
+
+
+
+19) Código de la reparación con fecha de entrada 2013/06/03.
+
+//reparacion[fecha_entrada="2013/06/03"]/@codigo
+
+
+
+20)Suma de las horas de reparación del coche de matrícula 4444B.
+
+sum(//reparacion[matricula="4444B"]/horas)
+
+
+21) Matrícula de los coches marca Ford y Volkswagen.
+
+//coche[marca="Ford" or marca="Volkswagen"]/matricula/text()
+
+
+---------------------------------------------------------------------------
+
+
+ejercicico 6.
+
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE universidad SYSTEM "universitad.dtd">
+<universidad>
+
+    <nombre year="1964">Universidad de Victoria</nombre>
+	<fechaconstruccion>14/03/1964</fechaconstruccion>
+    <pais>España</pais>
+
+<!-- CARRERAS -->
+
+    <carreras>
+
+        <carrera id="c01">
+            <nombre>I.T. Informática</nombre>
+            <plan>2003</plan>
+            <creditos>250</creditos>
+            <centro>Escuela de Informática</centro>
+        </carrera>
+
+        <carrera id="c02">
+            <nombre>Dipl. Empresariales</nombre>
+            <plan>2001</plan>
+            <creditos>275</creditos>
+            <centro>Facultad de Ciencias Sociales</centro>
+        </carrera>
+
+        <carrera id="c03">
+            <nombre>Dipl. Relaciones Laborales</nombre>
+            <plan>2001</plan>
+            <creditos>280</creditos>
+            <centro>Facultad de Ciencias Sociales</centro>
+            <subdirector>Alfonso Martín  Luque</subdirector>
+        </carrera>
+
+        <carrera id="c04">
+            <nombre>Lic. Quimica</nombre>
+            <plan>2003</plan>
+            <creditos>175</creditos>
+            <centro>Facultad de Ciencias Experimentales</centro>
+        </carrera>
+
+        <carrera id="c05">
+            <nombre>Lic. Biología</nombre>
+            <plan>2001</plan>
+            <creditos>175</creditos>
+            <centro>Facultad de Ciencias Experimentales</centro>
+        </carrera>
+
+        <carrera id="c06">
+            <nombre>Lic. Humanidades</nombre>
+            <plan>1980</plan>
+            <creditos>475</creditos>
+            <centro>Facultad de Humanidades</centro>
+        </carrera>
+
+    </carreras>
+
+<!-- ASIGNATURAS -->
+
+    <asignaturas>
+
+        <asignatura id="a01" titulacion="c01">
+            <nombre>Ofimática</nombre>
+            <creditos_teoricos>3</creditos_teoricos>
+            <creditos_practicos>1.5</creditos_practicos>
+            <trimestre>1</trimestre>
+        </asignatura>
+
+        <asignatura id="a02" titulacion="c01">
+            <nombre>Ingeniería del Software</nombre>
+            <creditos_teoricos>6</creditos_teoricos>
+            <creditos_practicos>1.5</creditos_practicos>
+            <trimestre>2</trimestre>
+        </asignatura>
+
+        <asignatura id="a03" titulacion="c02">
+            <nombre>Administración de Empresas</nombre>
+            <creditos_teoricos>4</creditos_teoricos>
+            <creditos_practicos>1.5</creditos_practicos>
+            <trimestre>1</trimestre>
+        </asignatura>
+
+        <asignatura id="a04" titulacion="c02">
+            <nombre>Derecho Internacional</nombre>
+            <creditos_teoricos>4</creditos_teoricos>
+            <creditos_practicos>5</creditos_practicos>
+            <trimestre>1</trimestre>
+        </asignatura>
+
+        <asignatura id="a05" titulacion="c04">
+            <nombre>Pedagogía</nombre>
+            <creditos_teoricos>4</creditos_teoricos>
+            <creditos_practicos>1.5</creditos_practicos>
+            <trimestre>2</trimestre>
+        </asignatura>
+
+        <asignatura id="a06" titulacion="c03">
+            <nombre>Didáctica</nombre>
+            <creditos_teoricos>4</creditos_teoricos>
+            <creditos_practicos>3</creditos_practicos>
+            <trimestre>2</trimestre>
+        </asignatura>
+
+        <asignatura id="a07" titulacion="c04">
+            <nombre>Tecnología de los Alimentos</nombre>
+            <creditos_teoricos>1.5</creditos_teoricos>
+            <creditos_practicos>7.5</creditos_practicos>
+            <trimestre>2</trimestre>
+        </asignatura>
+
+        <asignatura id="a08" titulacion="c01">
+            <nombre>Bases de Datos</nombre>
+            <creditos_teoricos>4.5</creditos_teoricos>
+            <creditos_practicos>5.5</creditos_practicos>
+            <trimestre>1</trimestre>
+        </asignatura>
+
+        <asignatura id="a09" titulacion="c06">
+            <nombre>Historia del Pensamiento</nombre>
+            <creditos_teoricos>6</creditos_teoricos>
+            <creditos_practicos>0</creditos_practicos>
+            <trimestre>2</trimestre>
+        </asignatura>
+
+    </asignaturas>
+
+<!-- ALUMNOS -->
+
+    <alumnos>
+
+        <alumno id="e01">
+            <apellido1>Rivas</apellido1>
+            <apellido2>Santos</apellido2>
+            <nombre>Víctor Manuel</nombre>
+            <sexo>Hombre</sexo>
+            <estudios>
+                <carrera codigo="c01"/>
+                <asignaturas>
+                    <asignatura codigo="a01"/>
+                    <asignatura codigo="a03"/>
+                    <asignatura codigo="a05"/>
+                    <asignatura codigo="a09"/>
+                </asignaturas>
+            </estudios>
+        </alumno>
+
+        <alumno id="e02">
+            <apellido1>Pérez</apellido1>
+            <apellido2>García</apellido2>
+            <nombre>Luisa</nombre>
+            <sexo>Mujer</sexo>
+            <estudios>
+                <carrera codigo="c02"/>
+                <asignaturas>
+                    <asignatura codigo="a02"/>
+                    <asignatura codigo="a01"/>
+                </asignaturas>
+                <proyecto>Web de IBM.com</proyecto>
+            </estudios>
+
+        </alumno>
+
+        <alumno id="e03" beca="si">
+            <apellido1>Pérez</apellido1>
+            <apellido2>Romero</apellido2>
+            <nombre>Fernando</nombre>
+            <sexo>Hombre</sexo>
+            <estudios>
+                <carrera codigo="c02"/>
+                <asignaturas>
+                    <asignatura codigo="a02"/>
+                    <asignatura codigo="a01"/>
+                    <asignatura codigo="a04"/>
+                    <asignatura codigo="a09"/>
+                </asignaturas>
+            </estudios>
+        </alumno>
+
+        <alumno id="e04">
+            <apellido1>Avalón</apellido1>
+            <apellido2>Jiménez</apellido2>
+            <nombre>María</nombre>
+            <sexo>Mujer</sexo>
+            <estudios>
+                <carrera codigo="c01"/>
+                <asignaturas>
+                    <asignatura codigo="a02"/>
+                    <asignatura codigo="a01"/>
+                    <asignatura codigo="a07"/>
+                </asignaturas>
+                <proyecto>Estudio de Salinidad del Pantano Iris</proyecto>
+            </estudios>
+        </alumno>
+
+    </alumnos>
+
+</universidad>
+
+
+
+
+
+1. Nombre de la Universidad:
+
+/universidad/nombre/text()
+
+
+2. Pais de la Universidad: 
+
+/universidad/pais/text()
+
+
+3. Nombres de las Carreras: 
+
+/universidad/carreras/carrera/nombre/text()
+
+
+4. Años de plan de estudio de las carreras: 
+
+/universidad/carreras/carrera/plan/text()
+
+
+5. Nombres de todos los alumnos: 
+
+/universidad/alumnos/alumno/nombre/text()
+
+
+6. Identificadores de todas las carreras: 
+
+//carrera/@id
+
+
+7. Datos de la carrera cuyo id es c01: 
+
+//carrera[@id="c01"]/node()
+
+
+8. Centro en que se estudia de la carrera cuyo id es c02:
+
+//carrera[@id="c01"]/centro/text()
+
+
+9. Nombre de las carreras que tengan subdirector: 
+
+//carrera[subdirector]/nombre/text()
+
+
+
+10.Nombre de los alumnos que estén haciendo proyecto: 
+
+//alumno/estudios[proyecto]/../nombre/node()
+
+
+
+
+11.Códigos de las carreras en las que hay algún alumno matriculado:
+
+
+//alumno/estudios/carrera/@codigo
+
+
+
+
+12.Apellidos y Nombre de los alumnos con beca: 
+
+concat(//alumno[@beca]/apellido1,' ', //alumno[@beca]/apellido2,' ',//alumno[@beca]/nombre)
+
+
+13.Nombre de las asignaturas de la titulación c04:
+
+
+//asignatura[@titulacion="c04"]/nombre/text()
+
+
+
+
+14.Nombre de las asignaturas de segundo trimestre:
+
+
+//asignatura[trimestre="2"]/nombre/text()
+
+
+
+15.Nombre de las asignaturas que no tienen 4 créditos teóricos: 
+
+//asignatura[creditos_teoricos!="4"]/nombre/text()
+
+
+
+16.Código de la carrera que estudia el último alumno:
+
+//alumnos/alumno[last()]/estudios/carrera/@codigo
+
+
+
+17.Código de las asignaturas que estudian mujeres:
+
+//alumno[sexo="Mujer"]/estudios/asignaturas/asignatura/@codigo
+
+
+
+18.Nombre de los alumnos que matriculados en la asignatura a02: 
+
+//alumno/estudios/asignaturas/asignatura[@codigo="a02"]/../../../nombre/text()
+
+
+
+19.Códigos de las carreras que estudian los alumnos matriculados en alguna asignatura.
+
+
+//alumno/estudios/asignaturas/asignatura[@codigo]/../../carrera/@codigo
+
+
+
+20.Apellidos de todos los hombres:
+
+concat(//alumno[sexo="Hombre"]/apellido1, ' ',//alumno[sexo="Hombre"]/apellido2)
+
+
+
+21.Nombre de la carrera que estudia Víctor Manuel: 
+
+//alumno[nombre="Víctor Manuel"]  [//alumno/estudios/carrera/@codigo]/../carreras/carrera/nombre/text()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

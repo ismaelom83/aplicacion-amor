@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+<title>ismael heras salvador</title>
+<link> https://elpais.com </link>
+<description>pagina del pais</description>
+<category>noticias deportivas</category>
+<languague>es</languague>
+<pubDate>tue, 15 jan 2019 8:45:00 +0100</pubDate>
+<item>
+<title>copa del rey</title>
+<link>https://elpais.com/deportes/2019/01/16/actualidad/1547663329_180356.html</link>
+<description>el atletico de madrid es eliminado de la copa del rey</description>
+<author>ismael heras salvador</author>
+<pubDate>tue, 15 jan 2019 9:00:00 +0100</pubDate>
+<guid>http://192.168.2.104</guid>
+</item>
+<item>
+<title>copa de italia</title>
+<link>https://elpais.com/deportes/2019/01/16/actualidad/1547666484_588289.html</link>
+<description>cristiano gana su primer titulo en italia</description>
+<author>ismael heras salvador</author>
+<pubDate>tue, 15 jan 2019 8:45:00 +0100</pubDate>
+<guid>http://192.168.2.104</guid>
+</item>
+<item>
+<title>balonmano</title>
+<link>https://elpais.com/deportes/2019/01/16/actualidad/1547653272_288699.html</link>
+<description>españa gana a macedonia</description>
+<author>ismael heras salvador</author>
+<pubDate>tue, 15 jan 2019 8:45:00 +0100</pubDate>
+<guid>http://192.168.2.104</guid>
+</item>
+</channel>
+
+</rss>

@@ -1,0 +1,15 @@
+
+ 
+
+codigo::after { 
+content: '\A'; white-space: pre;
+
+}
+lenguaje{
+	color:red;
+}
+codigo{
+	border:1px solid black;
+	font-size:20px;
+	white-space: pre;
+}

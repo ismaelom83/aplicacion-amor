@@ -1,0 +1,21 @@
+/* 
+    Created on : 16-nov-2018
+    Author     : 
+    File        : estilo1.css
+    Description : Trabajando con selectores
+*/
+
+ p{
+  background-color: #dddddd;
+  
+  
+
+}
+
+ div a {
+    background-color: #009cde;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+

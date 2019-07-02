@@ -1,0 +1,28 @@
+/* 
+    Created on : 16-nov-2018
+    Author     : 
+    File        : estilo1.css
+    Description : Trabajando con selectores
+*/
+
+
+
+
+
+
+  [title~= Titulo]{
+    color: #009cde;
+    font-size: 2em;
+}
+
+ .hijo  p{
+    border: solid 1px red;
+}
+
+ [title="Titulo hijo 1"]{
+  background-color: red;
+}
+
+.padre ~ p{
+    border: solid 1px red;
+}

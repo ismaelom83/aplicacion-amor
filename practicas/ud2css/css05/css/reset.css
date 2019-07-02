@@ -1,0 +1,23 @@
+
+/* 
+    Created on  : 4-12-2018
+    Author      : 
+    File        : reset.css
+    Description : Resetear los estilos
+*/
+
+
+
+
+*{
+	font-family: "PT  mono", monospace;
+}
+
+
+
+
+body{
+    max-width: 800px;
+   margin-left: 25%;
+}
+

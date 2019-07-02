@@ -1,0 +1,8 @@
+ejemplos{border:solid black 1px;}
+lenguaje{color:red;}
+
+
+codigo:after { content: '\A';white-space: pre; }
+codigo{
+	white-space: pre;;
+}

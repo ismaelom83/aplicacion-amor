@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom"> 
+	<title>ATOM- Ismael heras salvador</title>
+	<id>http://192.168.2.104/</id>
+	<updated>2019-01-18T10:00:00+01:00</updated>
+	<author>
+		<name>Ismael Heras Salvador</name>
+		<uri>http://192.168.2.104</uri>
+		<email>ismael.hersal@educa.jcyl.es</email>
+	</author>
+	<entry>
+		<title>html02</title>
+		<id>http://192.168.2.104/html02.html</id>
+		<link href="http://192.168.2.104/practicas/ud2html/html02/html02.html"/>
+		<updated>2019-01-18T10:00:00+01:00</updated>
+	</entry>
+	
+	<entry>
+		<title>html03</title>
+		<id>http://192.168.2.104/html03.html</id>
+		<link href="http://192.168.2.104/practicas/ud2html/html03/html03.html"/>
+		<updated>2019-01-21T18:02:00+01:00</updated>
+	</entry>
+	
+	<entry>
+		<title>html04</title>
+		<id>http://192.168.2.104/html04.html</id>
+		<link href="http://192.168.2.104/practicas/ud2html/html04/html04.html"/>
+		<updated>2019-01-21T18:03:00+01:00</updated>
+	</entry>
+	
+	<entry>
+		<title>html05</title>
+		<id>http://192.168.2.104/html05.html</id>
+		<link href="http://192.168.2.104/practicas/ud2html/html05/html05.html"/>
+		<updated>2019-01-21T18:04:00+01:00</updated>
+	</entry>
+	<entry>
+		<title>html06</title>
+		<id>http://192.168.2.104/html06.html</id>
+		<link href="http://192.168.2.104/practicas/ud2html/html06/html06.html"/>
+		<updated>2019-01-21T18:05:00+01:00</updated>
+	</entry>
+	<entry>
+		<title>html07</title>
+		<id>http://192.168.2.104/html07.html</id>
+		<link href="http://192.168.2.104/practicas/ud2html/html07/html07.html"/>
+		<updated>2019-01-21T18:00:00+01:00</updated>
+	</entry>
+	
+	<entry>
+		<title>html08</title>
+		<id>http://192.168.2.104/html08.html</id>
+		<link href="http://192.168.2.104/practicas/ud2html/html08/html08.html"/>
+		<updated>2019-01-21T18:05:00+01:00</updated>
+	</entry>
+	
+	<entry>
+		<title>css001</title>
+		<id>http://192.168.2.104/ud2css/css01</id>
+		<link href="http://192.168.2.104/practicas/ud2css/css01/index.html"/>
+		<updated>2019-01-21T18:05:00+01:00</updated>
+	</entry>
+	
+	<entry>
+		<title>css002</title>
+		<id>http://192.168.2.104/ud2css/css02</id>
+		<link href="http://192.168.2.104/practicas/ud2css/css02/index.html"/>
+		<updated>2019-01-21T18:05:00+01:00</updated>
+	</entry>
+	
+	<entry>
+		<title>css003</title>
+		<id>http://192.168.2.104/ud2css/css03</id>
+		<link href="http://192.168.2.104/practicas/ud2css/css03/index.html"/>
+		<updated>2019-01-21T18:05:00+01:00</updated>
+	</entry>
+	
+	<entry>
+		<title>css004</title>
+		<id>http://192.168.2.104/ud2css/css04</id>
+		<link href="http://192.168.2.104/practicas/ud2css/css04/index.html"/>
+		<updated>2019-01-21T18:05:00+01:00</updated>
+	</entry>
+	
+	<entry>
+		<title>css005</title>
+		<id>http://192.168.2.104/ud2css/css05</id>
+		<link href="http://192.168.2.104/practicas/ud2css/css05/index.html"/>
+		<updated>2019-01-21T18:05:00+01:00</updated>
+	</entry>
+	<entry>
+		<title>css006</title>
+		<id>http://192.168.2.104/ud2css/css06</id>
+		<link href="http://192.168.2.104/practicas/ud2css/css06/index.html"/>
+		<updated>2019-01-21T18:05:00+01:00</updated>
+		<entry>
+		<title>css007</title>
+		<id>http://192.168.2.104/ud2css/css07</id>
+		<link href="http://192.168.2.104/practicas/ud2css/css07/index.html"/>
+		<updated>2019-01-21T18:05:00+01:00</updated>
+	</entry>
+	</entry>
+	
+	
+		
+</feed>

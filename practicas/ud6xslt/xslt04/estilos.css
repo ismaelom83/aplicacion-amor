@@ -1,0 +1,31 @@
+
+*{
+	font-family:'Permanent Marker', cursive;
+	
+	
+}
+body{
+	margin:auto;
+	width: 60%;
+}
+
+div{
+	margin-bottom:50px;
+}
+
+
+.contenedor2 > ul >li{
+	list-style:none;
+}
+
+.lista{
+	border: 3px solid  #387ab6 ;
+}
+
+h2{
+	background-color: #387ab6 ;
+}
+
+h1{
+	background-color: #387ab6 ;
+}

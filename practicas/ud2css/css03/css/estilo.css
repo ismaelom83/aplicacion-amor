@@ -1,0 +1,78 @@
+/* 
+    Created on : 22/11/2018
+    File        : estilo.css
+    Description : css3. 
+*/
+
+body{
+    background-color: burlywood;
+    width: 500px;
+    margin: 0 auto;
+    font-family: 'Pacifico', cursive;
+}
+
+.a, .b, .c, .d{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: solid  brown  5px; 
+    float: left;
+    background-color:  rgb(220, 118, 51);
+}
+
+div div{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+}
+h1{
+    color: white;
+}
+
+div div:first-child{
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(0,10%,50%); 
+    font-size: 11px;
+
+}
+body > div{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+div div:last-child{
+    color: white;
+    font-size: 10px;
+    /* line-height: 1;
+    text-align: justify; */
+}
+
+.a:hover{
+    background-image: url("../images/invierno.png");
+    /* background-size: cover; */
+}
+.b:hover{
+    background-image: url("../images/primavera.png");
+    /* background-size: cover; */
+}
+.c:hover{
+    background-image: url("../images/verano.png");
+    /* background-size: cover; */
+}
+.d:hover{
+    background-image: url("../images/otono.png");
+    /* background-size: cover; */
+}
+
+
+body div:nth-child(3n+2){
+    font-variant: small-caps;
+}
+body div:nth-child(3n+3){
+    font-weight: bold;
+}
+body div:nth-child(3n+4){
+    font-style: italic;
+}

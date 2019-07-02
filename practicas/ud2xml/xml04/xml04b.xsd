@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="horario">
+		<xs:complexType >
+			<xs:sequence>
+				<xs:element name="modulos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="modulo" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element  name="sigla">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="EDD|PROG|BBDD|LMGSI|SINF|FOL"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element type="xs:string" name="nombre"/>
+										<xs:element name="profesor">						
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute  name="codigo">
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:pattern value="ARG|MTRG|ARN|ACF|HRO|MDB"/>
+																</xs:restriction>
+															</xs:simpleType>
+														</xs:attribute>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="dia" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="dia_sem" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute  name="dia">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="lunes|martes|miercoles|jueves|viernes"/>
+												</xs:restriction>
+											</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute  name="num" use="optional">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="1|2"/>
+												</xs:restriction>
+											</xs:simpleType>
+											</xs:attribute>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="hora" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

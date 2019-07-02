@@ -1,0 +1,10 @@
+/* 
+    Created on : 16-nov-2018, 18:48:12
+    File        : estilo.css
+    Description : Pseudo-elemento
+*/
+
+#abuelo::before{
+    content: "Estilo por defecto";
+}
+

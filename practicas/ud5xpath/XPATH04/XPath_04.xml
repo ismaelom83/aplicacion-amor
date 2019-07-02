@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE actividades [
+<!ELEMENT actividades (actividad+)>
+<!ELEMENT actividad (codigo, titulo, fecha_inicio, sesiones)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT fecha_inicio (#PCDATA)>
+<!ELEMENT sesiones (minutos_sesion, sesiones_semana)>
+<!ELEMENT minutos_sesion (#PCDATA)>
+<!ELEMENT sesiones_semana (#PCDATA)>
+<!ATTLIST actividad nivel CDATA #REQUIRED>
+<!ATTLIST sesiones intensidad CDATA #REQUIRED>
+]>
+<actividades xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "xpath_04.xsd">
+	<actividad nivel="infantil">
+		<codigo>A01</codigo>
+		<titulo>Al agua patos</titulo>
+		<fecha_inicio>2017-01-15</fecha_inicio>
+		<sesiones intensidad="suave"> 	
+			<minutos_sesion>45</minutos_sesion>
+			<sesiones_semana>3</sesiones_semana>
+		</sesiones>
+	</actividad>
+
+	<actividad nivel="adultos">
+		<codigo>A02</codigo>
+		<titulo>Spinning y agua</titulo>
+		<fecha_inicio>2017-01-08</fecha_inicio>
+		<sesiones intensidad="fuerte"> 			
+			<minutos_sesion>45</minutos_sesion>
+			<sesiones_semana>3</sesiones_semana>
+		</sesiones>
+	</actividad>
+	<actividad nivel="adultos">
+		<codigo>A03</codigo>
+		<titulo>Spinning en el agua</titulo>
+		<fecha_inicio>2017-01-15</fecha_inicio>
+		<sesiones intensidad="moderada"> 			
+			<minutos_sesion>60</minutos_sesion>
+			<sesiones_semana>2</sesiones_semana>
+		</sesiones>
+	</actividad>
+	<actividad nivel="infantil">
+		<codigo>A04</codigo>
+		<titulo>Socorrismo</titulo>
+		<fecha_inicio>2017-01-15</fecha_inicio>
+		<sesiones intensidad="moderada"> 			
+			<minutos_sesion>45</minutos_sesion>
+			<sesiones_semana>2</sesiones_semana>
+		</sesiones>
+	</actividad>
+	<actividad nivel="infantil">
+		<codigo>A05</codigo>
+		<titulo>Perfeccionamiento en el agua</titulo>
+		<fecha_inicio>2017-01-15</fecha_inicio>
+		<sesiones intensidad="moderada"> 			
+			<minutos_sesion>45</minutos_sesion>
+			<sesiones_semana>2</sesiones_semana>
+		</sesiones>
+	</actividad>
+	<actividad nivel="adultos">
+		<codigo>A06</codigo>
+		<titulo>Aprender a nadar</titulo>
+		<fecha_inicio>2017-02-15</fecha_inicio>
+		<sesiones intensidad="suave"> 			
+			<minutos_sesion>30</minutos_sesion>
+			<sesiones_semana>2</sesiones_semana>
+		</sesiones>
+	</actividad>
+</actividades>

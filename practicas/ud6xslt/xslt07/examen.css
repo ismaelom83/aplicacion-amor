@@ -1,0 +1,34 @@
+
+body{
+	margin:auto;
+	width: 50%;
+	
+	font-size:24px;
+}
+
+form{
+	border:solid 6px grey;	
+	margin-bottom:0px;
+}
+
+.respuestas{
+	border: dotted 2px grey;
+	margin-bottom:3px;
+	
+}
+
+.enunciado{
+	margin-bottom:10px;
+	font-weight:bold;
+	list-style:none;	
+}
+
+
+
+
+.btn1{
+    display: inline-block;
+   margin-bottom: 50px;
+   margin-top: 30px;
+   margin-left: 20px;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="examen.xsl"?>
+<examen>
+	<datos>
+            <nombreCiclo>Desarrollo de Aplicaciones Web</nombreCiclo>
+            <curso>1</curso>
+            <nombreModulo>Lenguaje de Marcas y Sistemas Gestion de Informacion</nombreModulo>
+            <evaluacion>3</evaluacion>
+            <fecha>
+		<dia>15</dia>
+		<mes>5</mes>
+		<anyo>2017</anyo>
+            </fecha>
+	</datos>
+	<preguntas>
+		<pregunta id="1">
+			<enunciado>¿Qué es XSLT?</enunciado>
+			<respuestas>
+				<respuesta correcta="correcta">Es un lenguaje para transformar documentos XML</respuesta>
+				<respuesta>Es un lenguaje de navegación de doucmentos XML</respuesta>
+				<respuesta>Es un lenguaje para formatear documentos XML</respuesta>
+				<respuesta >Un lenguaje de consulta de documentos XML</respuesta>
+			</respuestas>
+		</pregunta>
+		<pregunta id="2">
+			<enunciado>¿XSLT es usado para transformar documentos XML en?</enunciado>
+			<respuestas>
+				<respuesta correcta="correcta">Otro documento XML o en un formato reconocido por el navegador</respuesta>
+				<respuesta>Solo se transforma en otro documento XML</respuesta>
+				<respuesta>Solo se transforma en otro documento XHTML</respuesta>
+				<respuesta>Solo se transforma en otro documento HTML</respuesta>
+			</respuestas>
+		</pregunta>
+		<pregunta id="3">
+			<enunciado>¿Qué es Xpath?</enunciado>
+			<respuestas>
+				<respuesta>Es un lenguaje para formatear documentos XML</respuesta>
+				<respuesta>Es un lenguaje para dar formato a un documento HTML</respuesta>
+				<respuesta correcta="correcta">Puede ser usado para navegar a través de elementos y atributos en un documento XML</respuesta>
+				<respuesta>Es un lenguaje de lado del servidor</respuesta>
+			</respuestas>
+		</pregunta>
+		<pregunta id="4">
+			<enunciado>¿Qué es un DTD?</enunciado>
+			<respuestas>
+				<respuesta>Es una extensión de las hojas de estilo</respuesta>
+				<respuesta>Es un lenguaje de programación orientado al servidor</respuesta>
+				<respuesta correcta="correcta">Un DTD define la estructura y los elementos y atributos de un doucmento XML.</respuesta>
+				<respuesta>Estándar para Web Services Description Language</respuesta>
+			</respuestas>
+		</pregunta>
+		<pregunta id="5">
+			<enunciado>DTD: ¿Qué restricciones NO pueden ser usadas con los datos de tipo String?</enunciado>
+			<respuestas>
+				<respuesta correcta="correcta">minInclusive</respuesta>
+				<respuesta>length</respuesta>
+				<respuesta>maxLength</respuesta>
+				<respuesta>minLength</respuesta>
+			</respuestas>
+		</pregunta>
+	</preguntas>
+</examen>

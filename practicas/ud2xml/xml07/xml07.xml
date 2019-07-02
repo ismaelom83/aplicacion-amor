@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE estudiantes[ 
+<!ELEMENT estudiantes  (estudiante+)>
+<!ELEMENT estudiante (#PCDATA)>
+<!ATTLIST estudiante codigo ID #REQUIRED>
+<!ATTLIST estudiante codigoTutor IDREF #IMPLIED>
+ ]>
+ <estudiantes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "xml07.xsd">>
+ <estudiante codigo="e10001" codigoTutor="e10002">pepe</estudiante>
+ <estudiante codigo="e10002">ismael</estudiante>
+ <estudiante codigo="e10003">jose</estudiante>
+ <estudiante codigo="e10004" codigoTutor="e10003">Jesus</estudiante>
+ </estudiantes>

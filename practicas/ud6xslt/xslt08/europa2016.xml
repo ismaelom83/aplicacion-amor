@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="fasefinal.xsl"?>
+<eurocopa anyo="2016">
+	<fasefinal>
+		<grupo id="A">
+			<seleccion>
+				<iniciales>fra</iniciales>  
+				<clasificacion>
+					<jugados>2</jugados> 
+					<ganados>2</ganados>
+					<empatados>0</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>4</golesfavor>
+					<golescontra>1</golescontra>					
+				</clasificacion>
+			</seleccion>
+			<seleccion>
+				<iniciales>sui</iniciales>  
+				<clasificacion>
+					<jugados>2</jugados> 
+					<ganados>1</ganados>
+					<empatados>1</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>2</golesfavor>
+					<golescontra>1</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+			<seleccion>
+				<iniciales>alb</iniciales>  
+				<clasificacion>
+					<jugados>2</jugados> 
+					<ganados>0</ganados>
+					<empatados>0</empatados> 
+					<perdidos>2</perdidos>
+					<golesfavor>0</golesfavor>
+					<golescontra>3</golescontra>
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>rou</iniciales>  
+				<clasificacion>
+					<jugados>2</jugados> 
+					<ganados>0</ganados>
+					<empatados>1</empatados> 
+					<perdidos>1</perdidos>
+					<golesfavor>2</golesfavor>
+					<golescontra>3</golescontra>
+				</clasificacion>
+			</seleccion>
+		</grupo>
+		<grupo id="B">
+			<seleccion >
+				<iniciales>wal</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>1</ganados>
+					<empatados>0</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>2</golesfavor>
+					<golescontra>1</golescontra>
+				
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>eng</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>1</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>1</golesfavor>
+					<golescontra>1</golescontra>
+				
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>rus</iniciales>  
+				<clasificacion>
+					<jugados>2</jugados> 
+					<ganados>0</ganados>
+					<empatados>1</empatados> 
+					<perdidos>1</perdidos>
+					<golesfavor>2</golesfavor>
+					<golescontra>3</golescontra>
+				
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>svk</iniciales>  
+				<clasificacion>
+					<jugados>2</jugados> 
+					<ganados>1</ganados>
+					<empatados>0</empatados> 
+					<perdidos>1</perdidos>
+					<golesfavor>3</golesfavor>
+					<golescontra>3</golescontra>
+				</clasificacion>
+			</seleccion>
+		</grupo>
+		<grupo id="C">
+			<seleccion >
+				<iniciales>ger</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>1</ganados>
+					<empatados>0</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>2</golesfavor>
+					<golescontra>0</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>pol</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>1</ganados>
+					<empatados>0</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>1</golesfavor>
+					<golescontra>0</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+			<seleccion>
+				<iniciales>nir</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>0</empatados> 
+					<perdidos>1</perdidos>
+					<golesfavor>0</golesfavor>
+					<golescontra>1</golescontra>
+				
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>ukr</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>0</empatados> 
+					<perdidos>1</perdidos>
+					<golesfavor>0</golesfavor>
+					<golescontra>1</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+		</grupo>
+		<grupo id="D">
+			<seleccion >
+				<iniciales>cro</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>1</ganados>
+					<empatados>0</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>1</golesfavor>
+					<golescontra>0</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>esp</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>1</ganados>
+					<empatados>0</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>1</golesfavor>
+					<golescontra>0</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>cze</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>0</empatados> 
+					<perdidos>1</perdidos>
+					<golesfavor>0</golesfavor>
+					<golescontra>1</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>tur</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>0</empatados> 
+					<perdidos>1</perdidos>
+					<golesfavor>0</golesfavor>
+					<golescontra>1</golescontra>
+				
+				</clasificacion>
+			</seleccion>
+		</grupo>
+		<grupo id="E">
+			<seleccion>
+				<iniciales>ita</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>1</ganados>
+					<empatados>0</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>2</golesfavor>
+					<golescontra>0</golescontra>
+				
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>irl</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>1</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>1</golesfavor>
+					<golescontra>1</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>swe</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>1</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>1</golesfavor>
+					<golescontra>1</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>bel</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>0</empatados> 
+					<perdidos>1</perdidos>
+					<golesfavor>0</golesfavor>
+					<golescontra>1</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+		</grupo>
+		<grupo id="F">
+			<seleccion >
+				<iniciales>aut</iniciales>  
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>0</empatados> 
+					<perdidos>1</perdidos>
+					<golesfavor>0</golesfavor>
+					<golescontra>2</golescontra>
+				
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>hun</iniciales>  
+				
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>1</ganados>
+					<empatados>0</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>2</golesfavor>
+					<golescontra>0</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>isl</iniciales>  
+				
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>1</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>1</golesfavor>
+					<golescontra>1</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+			<seleccion >
+				<iniciales>por</iniciales>  
+				
+				<clasificacion>
+					<jugados>1</jugados> 
+					<ganados>0</ganados>
+					<empatados>1</empatados> 
+					<perdidos>0</perdidos>
+					<golesfavor>1</golesfavor>
+					<golescontra>1</golescontra>
+					
+				</clasificacion>
+			</seleccion>
+		</grupo>
+	</fasefinal>
+	
+	</eurocopa>

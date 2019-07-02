@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<datos  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "modeloSchena.xsd">
+	<!-- POSIBLES VALORES: ENTRE 1 Y 100-->
+	<precio>10</precio>
+	<!-- POSIBLES VALORES: JAVA PHP ASP C C++-->
+	<siglas>JAVA</siglas>
+	<!-- longitud minima entre 5 y 100-->
+	<descripcion>Es un lenguaje de programacion</descripcion>
+	<!-- longitud 5 digitos -->
+	<codigo>49700</codigo>
+	<iniciales>ARN</iniciales>
+	<nombre>Amor Rodriguez Navarro</nombre>
+	<notas>
+		<asignatura nombre="lmgsi">10</asignatura>
+		<asignatura>9</asignatura>
+	</notas>
+	
+	<!--forma de pago son contado, contrareenbolso, visa, paypal, master-->
+	
+	<formadepago>
+	<contado>110</contado>
+	</formadepago>
+	
+	<!-- lista de 5 canciones opcionales -->
+	
+	<lista fecha="2019-02-19">
+	<cancion1>cancion1</cancion1>
+	<cancion2>cancion2</cancion2>
+	<cancion3>cancion3</cancion3>
+	<cancion4>cancion4</cancion4>
+	<cancion5>cancion5</cancion5>
+	</lista>
+	
+	
+</datos>

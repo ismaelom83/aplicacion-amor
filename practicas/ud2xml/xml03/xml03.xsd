@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="libro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="capitulo" maxOccurs="3" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="titulo"/>
+              <xs:element name="subcapitulo" maxOccurs="3" minOccurs="0" >
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="titulo"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

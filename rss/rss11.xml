@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+<title>ismael heras salvador</title>
+<link> https://elpais.com </link>
+<description>pagina del pais</description>
+<category>noticias nacionales</category>
+<languague>es</languague>
+<pubDate>tue, 15 jan 2019 8:45:00 +0100</pubDate>
+<item>
+<title>religiosos imputados</title>
+<link>https://elpais.com/sociedad/2019/01/14/actualidad/1547491587_839008.html</link>
+<description>7 religiosos imputados en casos de pederastia</description>
+<author>ismael heras salvador</author>
+<pubDate>tue, 15 jan 2019 8:45:00 +0100</pubDate>
+<guid>http://192.168.2.104</guid>
+</item>
+<item>
+<title>los mosos contra los yijadsistas</title>
+<link>https://elpais.com/ccaa/2019/01/15/catalunya/1547530492_404262.html</link>
+<description>los mosos de escuadra realizan una operacion anti terrorista
+en barcelona y alrededores</description>
+<author>ismael heras salvador</author>
+<pubDate>tue, 15 jan 2019 8:45:00 +0100</pubDate>
+<guid>http://192.168.2.104</guid>
+</item>
+<item>
+<title>caso villarejo</title>
+<link>https://elpais.com/politica/2019/01/16/actualidad/1547665153_806973.html</link>
+<description>el juez acorrala a villarejo</description>
+<author>ismael heras salvador</author>
+<pubDate>tue, 15 jan 2019 8:45:00 +0100</pubDate>
+<guid>http://192.168.2.104</guid>
+</item>
+</channel>
+</rss>

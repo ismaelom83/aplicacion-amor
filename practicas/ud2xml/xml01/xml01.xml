@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mundo SYSTEM "xml01.dtd">
+<?xml-stylesheet type="text/xsl" href="horario.xsl"?>
+<mundo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "xml01.xsd">
+
+	<pais>
+		<nombre>Alemania</nombre>
+		<capital>berlin</capital>
+		<continente>Europa</continente>
+	</pais>
+
+	<pais >
+		<nombre>Argentina</nombre>
+		<capital>buenos aires</capital>
+		<continente>America</continente>
+	</pais>
+
+	<pais>
+
+		<nombre>Bahamas</nombre>
+		<capital>Nassau</capital>
+		<continente>America</continente>
+	</pais>
+
+	<pais>
+		<nombre>Afganistan</nombre>
+		<capital>Kabul</capital>
+		<continente>Asia</continente>
+	</pais>
+
+	<pais>
+		<nombre>Arabia Sudita</nombre>
+		<capital>Riad</capital>
+		<continente>Asia</continente>
+
+	</pais>
+</mundo>

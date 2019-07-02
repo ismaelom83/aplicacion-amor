@@ -1,0 +1,42 @@
+
+
+
+body{
+	margin:auto;
+	width: 50%;
+	
+	font-size:24px;
+}
+
+.table{
+   
+	width:900px;
+    height:200px;
+    border: solid 2px grey;
+}
+
+.linea {
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    background-color:  #EAEAEA;
+}
+
+.navegador{
+    text-align: center;
+   background-color: #091940;
+   height: 230px;
+}
+
+.linea2{
+    text-align: center;
+    width: 80px;
+    background-color:  #EAEAEA;
+    height: 20px;
+}
+
+.linea3{
+    text-align: center;
+    width: 80px;
+    height: 20px;
+}

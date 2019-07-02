@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="garaje">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="coches">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="coche" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="matricula"/>
+                    <xs:element type="xs:string" name="propietario"/>
+                    <xs:element type="xs:string" name="marca"/>
+                    <xs:element type="xs:string" name="modelo"/>
+                    <xs:element type="xs:string" name="color"/>
+                    <xs:element type="xs:int" name="km"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="reparaciones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="reparacion" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="matricula"/>
+                    <xs:element type="xs:string" name="descripcion"/>
+                    <xs:element type="xs:string" name="fecha_entrada"/>
+                    <xs:element type="xs:string" name="fecha_salida"/>
+                    <xs:element type="xs:byte" name="horas"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="codigo" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
